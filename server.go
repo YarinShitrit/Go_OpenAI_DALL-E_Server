@@ -5,12 +5,11 @@ import (
 	"encoding/json"
 	"io"
 	"net/http"
-
 	"github.com/gin-gonic/gin"
 )
 
 const IMAGE_GENERATE_URL = "https://api.openai.com/v1/images/generations"
-const OPEN_AI_API_KEY = "Bearer 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"
+const OPEN_AI_API_KEY = "YOUR KEY HERE"
 
 type imageGenerateRequest struct {
 	Text string `json:"prompt"`
